@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background:url(./icons/silver-golden-coins-falling-coins-wooden-wall_155003-7866.avif) no-repeat center bottom fixed;
+    background-size: cover;
+}
+
+#container{
+    width:450px;
+    height:450px;
+    background-color:#fff;
+    border-radius: 7px;
+    margin-inline: auto;
+    margin-top: 60px;
+    opacity: 0.85;
+}
+
+#details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1{
+    font-size: 26px;
+    margin-top: 15px;
+}
+
+
+input{
+    font-weight: 400;
+    font-size: 18px;
+    display: block;
+    width: 195px;
+    border: 2px solid #02002c;
+    color:#333;
+    padding: 10px;
+    outline: none;
+    text-align: center;
+}
+
+input:focus{
+    border-color:#9873fe;
+    color: #9873fe;
+}
+
+
+#select-container{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#from-select-container{
+    display: flex;
+    gap:70px;
+}
+
+#to-select-container{
+    display: flex;
+    gap:70px;
+    margin-top: 50px;
+}
+
+
+.select-flag {
+    display: flex;
+    width: 139px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: #9873fe;
+}
+
+img{
+    padding-left:8px;
+}
+
+select{
+    width: 90px;
+    height: 55px;
+    background: #9873fe;
+    color: #fff;
+    padding-left: 8px;
+    font-size: 18px;
+    outline: 0px;
+    border: 0px;
+    border-radius: 5px;
+    
+}
+
+select option{
+    background-color: #fff;
+    color:#02002c;
+    padding: 6px;
+    font-size:24px;
+}
+
+#details #convert-btn{
+    margin-top: 50px;
+    width:150px;
+    height: 60px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    padding: 16px;
+    cursor: pointer;
+    background-color: #9873fe;
+}
+
+#details #convert-btn:hover{
+    background-color: #02002c;
+}
+
+#result{
+    font-weight: 400px;
+    margin-top: 30px;
+    color:#000;
+    font-size: 18px;
+}
+
+@media all and (max-width:375px) {
+    html{
+        height: 100vh
+    }
+
+    #container{
+        margin-top: 110px;
+        width:350px;
+        height:350px;
+    }
+
+    h1{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    #select-container{
+        margin-top: 30px;
+    }
+
+    input{
+        width: 160px;
+        font-size: 13px;
+    }
+
+    #from-select-container{
+        gap:50px;
+    }
+
+    #to-select-container{
+        gap:50px;
+        margin-top: 30px;
+    }
+
+    select option{
+        font-size: 20px;
+    }
+
+    #details #convert-btn{
+        margin-top: 10px;
+        width: 120px;
+        height: 50px;
+        font-size: 15px;
+        padding: 14px;
+    }
+
+    #result{
+        margin-top: 30px;
+    }
+}
+
+@media all and (max-width:414px) {
+    html{
+        height: 100vh
+    }
+
+    #container{
+        margin-top: 150px;
+        width:350px;
+        height:380px;
+    }
+
+    h1{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    #select-container{
+        margin-top: 30px;
+    }
+
+    input{
+        width: 160px;
+        font-size: 13px;
+    }
+
+    #from-select-container{
+        gap:30px;
+    }
+
+    #to-select-container{
+        gap:30px;
+        margin-top: 30px;
+    }
+
+    select option{
+        font-size: 20px;
+    }
+
+    #details #convert-btn{
+        margin-top: 20px;
+        width: 120px;
+        height: 50px;
+        font-size: 15px;
+        padding: 14px;
+    }
+
+    #result{
+        margin-top: 35px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    html{
+        height: 100vh
+    }
+
+    #container{
+        margin-top: 190px;
+        width:650px;
+        height:400px;
+    }
+
+    h1{
+        margin-top: 45px;
+        font-size: 28px;
+    }
+
+    select{
+        width: 110px;
+    }
+
+    #select-container{
+        margin-top: 40px;
+    }
+
+    input{
+        width: 210px;
+        font-size: 18px;
+    }
+
+    #from-select-container{
+        gap:90px;
+    }
+
+    #to-select-container{
+        gap:90px;
+        margin-top: 40px;
+    }
+
+    select option{
+        font-size: 24px;
+    }
+
+    #details #convert-btn{
+        margin-top: 20px;
+        width: 170px;
+        height: 70px;
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    #result{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 820px){
+    html{
+        height: 100vh
+    }
+
+    #container{
+        margin-top: 90px;
+        width:650px;
+        height:500px;
+    }
+
+    h1{
+        margin-top: 45px;
+        font-size: 28px;
+    }
+
+    select{
+        width: 110px;
+    }
+
+    #select-container{
+        margin-top: 40px;
+    }
+
+    input{
+        width: 210px;
+        font-size: 18px;
+    }
+
+    #from-select-container{
+        gap:90px;
+    }
+
+    #to-select-container{
+        gap:90px;
+        margin-top: 40px;
+    }
+
+    select option{
+        font-size: 24px;
+    }
+
+    #details #convert-btn{
+        margin-top: 40px;
+        width: 170px;
+        height: 70px;
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    #result{
+        margin-top: 30px;
+    }
+}
+
+    
+
