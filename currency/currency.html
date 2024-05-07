@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="./css/currency.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="container">
+        <div id="details">
+            <h1>CURRENCY CONVERTER</h1>
+            <div id="select-container">
+                <div id="from-select-container">
+                    <input type="number"  min="0" class="amount" placeholder="Input your value..." />
+                    <div class="select-flag">
+                        <img  src="https://flagsapi.com/US/flat/48.png">
+                        <select id="from-currency-select"></select>
+                    </div>
+                </div>
+                <div id="to-select-container">
+                    <input type="number" min="0" class="amount" placeholder="Input your value..." />
+                    <div class="select-flag">
+                        <img  src="https://flagsapi.com/NG/flat/48.png">
+                        <select id="to-currency-select"></select>
+                    </div>
+                </div>
+            </div>
+            <p id="result"></p>
+            <buttton id="convert-btn">Convert</buttton>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./js/currency.js"></script>
+</body>
+</html>
